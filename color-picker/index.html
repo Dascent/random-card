@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <style>
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.color-picker {
+  text-align: center;
+}
+
+#colorDisplay {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 2px solid #000;
+}
+
+#hexDisplay {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <div class="color-picker">
+    <input type="color" id="colorInput">
+    <div id="colorDisplay"></div>
+    <div id="hexDisplay"></div>
+  </div>
+  <script>const colorInput = document.getElementById('colorInput');
+const colorDisplay = document.getElementById('colorDisplay');
+const hexDisplay = document.getElementById('hexDisplay');
+
+function updateColorDisplay() {
+  const color = colorInput.value;
+  colorDisplay.style.backgroundColor = color;
+  hexDisplay.textContent = color.toUpperCase();
+}
+
+colorInput.addEventListener('input', updateColorDisplay);
+updateColorDisplay();
+</script>
+</body>
+</html>

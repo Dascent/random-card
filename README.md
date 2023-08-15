@@ -16,7 +16,7 @@ Random Card Plugin
 
 2. Create Cards: Go to the WordPress admin dashboard and navigate to "Cards" in the left menu. Add new cards with images and descriptions. Assign categories to each card if desired.
 
-3. Display Random Card: To display a random card on any page or post, use the shortcode ```[random-card]```. The plugin will automatically fetch a random card from the "Cards" post type and display it on the page. The card displayed will change each time the page is reloaded or button is cliked to flip the card
+3. Display Random Card: To display a random card on any page or post, use the shortcode ```[random-card]```. The plugin will automatically fetch a random card from the "Cards" post type and display it on the page. The card displayed will change each time the page is reloaded or button click to flip the card.
 
 
 Note: You can customize the plugin's appearance and behavior using the available settings in the WordPress Customizer or through the "Random Card Plugin" settings in the WordPress dashboard.
